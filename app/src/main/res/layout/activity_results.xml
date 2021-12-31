@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@drawable/results_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/ic_trophy">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvNameResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations Name"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your score is 1/5"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:alpha="0.7"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#975AFF"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="20dp">
+
+    </Button>
+
+</LinearLayout>

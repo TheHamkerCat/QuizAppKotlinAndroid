@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity"
+    android:orientation="vertical"
+    android:background="#1B1B1B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="5"
+            android:minHeight="30dp"
+            android:padding="13dp"
+            android:progress="2"
+            android:progressTint="@color/colorPrimary">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Some sample text to check if everything is working">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ivQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:contentDescription="Quiz alt image"
+            android:src="@drawable/kotlin_mascot">
+
+        </ImageView>
+
+
+        <!-- Option 1 & 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:text="Something"
+                android:textColor="@color/colorOptionBtn"
+                android:background="@drawable/default_option_border">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:text="Something"
+                android:textColor="@color/colorOptionBtn"
+                android:background="@drawable/default_option_border">
+            </TextView>
+        </LinearLayout>
+
+<!-- Option 3 & 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvOption3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:text="Something"
+                android:textColor="@color/colorOptionBtn"
+                android:background="@drawable/default_option_border">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvOption4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:text="Something"
+                android:textColor="@color/colorOptionBtn"
+                android:background="@drawable/default_option_border">
+            </TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAnswerSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
